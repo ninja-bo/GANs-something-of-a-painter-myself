@@ -15,11 +15,9 @@ Photos Dataset:
 
 ## 2. EDA
 Monet Paintings:
-![alt text](image.png)
+![alt text](./image/image.png)
 Photos:
-![alt text](image-1.png)
-
-![alt text](image-2.png)
+![alt text](./image/image-1.png)
 
 ## 3. Model Architecture
 #### Comparison
@@ -41,9 +39,19 @@ In a standard GAN, there are two main components:
 The code I've been working on implements a CycleGAN, which is a specific type of GAN designed for unpaired image-to-image translation. Unlike a standard GAN, which might generate new images from random noise, a CycleGAN is focused on transforming images from one domain to another (e.g., turning photos into Monet-style paintings).
 
 ## 4. Results and Analysis
-
+### 1. Hyperparameter Tuning
+### 2. Initial training
+### 3. Fine-tuning
+### 4. Generate images
+![alt text](./image/image-2.png)
 
 ## 5. Conclusion
-
-
-## 6. Submission
+### 1. Strengths:
+- Comprehensive approach: The project covers all major steps from data preparation to model evaluation.
+- Hyperparameter tuning: Uses Bayesian optimization for finding optimal hyperparameters.
+- Data augmentation: Implements various image augmentation techniques to improve model generalization.
+- Evaluation metrics: Includes MiFID (Modified Inception Frechet Distance) for quantitative evaluation.
+### 2. Areas for Improvement:
+- Model complexity: The current generator and discriminator architectures are relatively simple. Consider implementing more advanced architectures like ResNet-based models.
+- Training stability: GANs can be unstable during training. Consider implementing techniques like gradient penalty or spectral normalization to improve stability.
+- Evaluation: While MiFID is implemented, it's not used in the training loop. Consider integrating it into the training process for model selection.

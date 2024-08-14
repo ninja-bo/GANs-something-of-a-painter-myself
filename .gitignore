@@ -18,3 +18,4 @@ a.out
 *.terraform
 
 /data
+/draft
