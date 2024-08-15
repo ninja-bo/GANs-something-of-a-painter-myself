@@ -55,3 +55,6 @@ The code I've been working on implements a CycleGAN, which is a specific type of
 - Model complexity: The current generator and discriminator architectures are relatively simple. Consider implementing more advanced architectures like ResNet-based models.
 - Training stability: GANs can be unstable during training. Consider implementing techniques like gradient penalty or spectral normalization to improve stability.
 - Evaluation: While MiFID is implemented, it's not used in the training loop. Consider integrating it into the training process for model selection.
+
+## 6. Submission
+![alt text](./image/image-3.png)
